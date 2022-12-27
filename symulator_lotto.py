@@ -17,7 +17,7 @@ import random
 
 def user_hope():
     """Get six numbers from user.
-    :rtype: int
+    :rtype int
     :return: list of six numbers as int
     """
     while True:
