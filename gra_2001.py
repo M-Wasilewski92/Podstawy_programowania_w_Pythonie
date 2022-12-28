@@ -18,9 +18,21 @@ def main():
     while True:
         dice = get_dice()
         roll = roll_dice(dice)
+        if roll == 7:
+            print("You rolled 7 :(")
+            roll = roll // 7
+        if roll == 11:
+            print("You rolled 11 :)")
+            roll = roll * 11
         player_1 += roll
         print(f"You rolled: {roll}")
         roll = roll_dice(get_computer_dice())
+        if roll == 7:
+            print("Computer rolled 7 :)")
+            roll = roll // 7
+        if roll == 11:
+            print("Computer rolled 11 :(")
+            roll = roll * 11
         player_2 += roll
         print(f"Player 2 rolled: {roll} ")
         print("_" * 20)
